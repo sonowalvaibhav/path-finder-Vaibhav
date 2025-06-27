@@ -1,49 +1,36 @@
+🗺️ Shortest Path Finder
+A simple web application that helps users find the shortest path between two locations on the IIT Guwahati campus. Designed to assist students and visitors in navigating the campus easily!
 
-# Shortest-Path-Finder
+✨ Features
+🔢 Displays the shortest distance between selected source and destination.
 
-A brief description of what this project does and who it's for
+🧭 Shows the exact path (in terms of numbered nodes) to follow for the minimum distance.
 
-## Features
+📡 API Reference
+🔍 Get shortest distance and path between two nodes
+http
+Copy
+Edit
+GET /shortd/<int:A>/<int:B>
+Parameter	Type	Description
+A (source)	integer	Required — starting point
+B (destination)	integer	Required — end point
 
-- displays the shortest distance between source and destination.
-- displays shortest path one must take to reach destintion with minimum distance
+🧰 Tech Stack
+Frontend: React
+Backend: Python, Flask
 
-## API Reference
+🎓 Used By
+This project can be used by:
 
-#### Get shortest distance between node A and node B 
+👨‍🎓 Students of IIT Guwahati
 
-```http
-  GET /shortd/<int:A>/<int:B>
-```
+❓ FAQ
+🔹 How do I get the shortest path?
+Every location on campus is mapped to a number from 1 to 64.
+To find a path:
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `source` | `integer` | **Required**|
-| `destination` | `integer` |     **Required**      |
+Select the source and destination nodes.
 
+The app will display the shortest path using those node numbers in order.
 
-
-
-## Tech Stack
-
-**Client:** React
-
-**Server:** Flask, Python
-
-## Rendered Website
-
-  https://shortest-path-finder-delta.vercel.app/
-
-
-## Used By
-
-This project is used by the following:
-
-- Students of IIT Guwahati
-
-
-## FAQ
-
-#### How will obtain my shortest path from source to destination?
-
-Every possible source and destination is mapped with a number ranging from (1 to 64). Path in the application will display the nodes in order to reach the destination. 
