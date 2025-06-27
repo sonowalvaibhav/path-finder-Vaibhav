@@ -18,7 +18,9 @@ GET /shortd/<int:A>/<int:B>
 | `destination` | `integer` |     **Required**      |
 
 ## 🧰 Tech Stack
+
 **Client:** React
+
 **Server:**  Python, Flask
 
 ## 🎓 Used By
